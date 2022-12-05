@@ -103,9 +103,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
@@ -243,10 +240,6 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150
 
 # Media
 PRODUCT_PACKAGES += \
